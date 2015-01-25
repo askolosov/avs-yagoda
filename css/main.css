@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic);
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+}
+
+.page-header {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    background: white;
+    z-index: 1000;
+}
+
+.page-header.affix {
+    left: 0;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    position: fixed;
+    right: 0;    
+}
+
+.page-header.affix + .affix-spacer {
+    width: 100%;
+    height: 120px;
+}
+
+.page-header h1 {
+    float: left;
+    width: 12em;
+    padding-bottom: 0.5em;
+}
+
+.page-header h1 sub {
+    font-size: 0.8em; 
+}
+
+.page-header h1 small a {
+    color: #999;
+}
+
+.page-header h1 small a:hover {
+    color: #666;
+}
+
+#contacts {
+    float: right;
+    width: 14em;
+    font-size: 20px;
+}
+
+#contacts p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    text-align: right;
+}
+
+#contacts i {
+    padding-right: 0.5em;
+}
+
+@media screen and (min-width:768px){
+    .jumbotron h1 {
+        font-size: 61px;
+        margin-bottom: 20px;
+    }
+
+    .jumbotron {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.jumbotron {
+    margin-bottom: 15px;
+}
+
+#berries.affix {
+    position: relative;
+}
+
+.navbar-berries {
+    background: white;
+    padding: 5px;    
+    width: 100%;
+}
+
+.navbar-berries ul.nav li {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.navbar-berries ul.nav > li + li {
+    margin-left: 6em;
+}
+
+.navbar-berries hr {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#berries.affix .navbar-berries {
+    position: fixed;
+    top: 120px;
+}
+
+#berries.affix .affix-spacer {
+    width: 100%;
+    height: 79px;
+}
+
+.berries-descr {
+    margin-top: 40px;
+}
+
+.berry-descr {
+    /* padding-top: 65px; */
+}
+
+.navbar-berries ul.nav li.blackberry a {
+    color: rgb(48,59,105);
+}
+
+.navbar-berries ul.nav li.blackberry.active a {
+    color: white;
+    background-color: rgb(48,59,105);
+}
+
+.navbar-berries ul.nav li.cowberry a {
+    color: rgb(189,42,70);
+}
+
+.navbar-berries ul.nav li.cowberry.active a {
+    color: white;
+    background-color: rgb(189,42,70);
+}
+
+.navbar-berries ul.nav li.cloudberry a {
+    color: rgb(251,133,35);
+}
+
+.navbar-berries ul.nav li.cloudberry.active a {
+    color: white;
+    background-color: rgb(251,133,35);
+}
+
+.navbar-berries ul.nav li.cranberry a {
+    color: rgb(165,46,52);
+}
+
+.navbar-berries ul.nav li.cranberry.active a {
+    color: white;
+    background-color: rgb(165,46,52);
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -220px;
+    visibility: hidden;
+}
